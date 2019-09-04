@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
+/* USO GERAL */
+:root{
+    --roxo: #472A4C;
+    --branco: White;
+    --cinza: #F5F5F5;
+    --montserrat: 'Montserrat', sans-serif;
+    --lato: 'Lato', sans-serif;
+    --laranja: #E18000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--lato);
+    font-size: 15px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.card_style{
+    -webkit-box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
+    -moz-box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
+    box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
+
+    background-color: var(--fundo);
+    border-radius: 4px;
+
+    /* width: a definir, height: a definir */
+}
+
+/* INÍCIO DO HEADER */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.header_position{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header_position img{
+    height: 70px;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+#menu_superior{
+    background-color: #472A4C;
+    padding: 13px 0px;
+}
+#menu_superior ul li{
+    background-color: var(--branco);
+    border-radius: 20px;
+    text-align: center;
+    width: 140px;
+    height: 18px;
+    padding: 3px 0px;
+    margin: 0px 0px 0px 20px;
+}
+#menu_superior ul a{
+    color: var(--roxo);
+    text-decoration: none;
+}
+#menu_inferior{
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
+    box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
+
+    background-color: #F5F5F5;
+    padding: 38px 0px; 
+}
+#menu_inferior ul a{
+    color: var(--roxo);
+    text-decoration: none;
+    margin: 0px 0px 0px 40px;
+    font-size: 22px;
+}
+
+/* INÍCIO DO FOOTER */
+footer{
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+    box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+
+    background-color: var(--roxo);
+    text-align: center;
+    color: var(--branco);
+    padding: 15px 0px;
+}
+.footer_position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.footer_style{
+    text-align: left;
+}
+.footer_style p{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.footer_style a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 20px 0px 0px;
+    display: inline-flex;
+    align-items: center;
+}
+.footer_style img{
+    margin: 0px 10px 0px 0px;
+    height: 30px;
+}
+
+/* OBRIGATÓRIO NO MAIN */
+main{
+    margin: 200px 0px 0px;
+}
+
+/* MAIN DA SUA PAGE */
+
+.caixa_central{
+    margin: auto;
+    width: 1200px;
+    
+}
+
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 565px; /*765*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--montserrat);
+}
+
+.bloco{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    /*background-color: var(--branco);*/
+    padding: 50px 100%;
+    color: white;
+}
+
+.bloco_titulo_1{
+    font-size: 40px;
+}
+
+.bloco_titulo_2{
+    font-size: 25px;
+    width: 600px;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.pesquisa a{
+    background-color: var(--roxo); 
+    margin-left: 10px;
+    padding: 0px 18px;
+    border-radius: 10px;
+    height: 35px;
+    font-family: var(--lato); 
+}
+
+.pesquisa img{
+    width: 25px;
+    
+}
+
+.texto{
+    width: 700px; 
+    border-radius: 10px;  
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+    list-style: none;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.menu a{
+    text-decoration-line: none;
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-family: var(--lato); 
+}
+
+.linha_laranja{
+    background-color: var(--laranja); 
+    color: var(--branco);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 22px;   
+    
+}
+
+.grupo_total{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.grupo{
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    flex-wrap: wrap;  
+}
+
+.cards{
+    -webkit-box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
+    box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
+
+    background-color: white;
+    border-radius: 10px;
+
+    margin-top: 40px;
+    width: 350px;
+}
+
+.img{
+    align-items: center;
+    text-align: center;   
+}
+
+.img img{
+    padding-top: 30px;
+    width: 130px;
+}
+
+.card_titulo{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-decoration-line: underline;
+    font-size: 18px;
+    font-family: var(--montserrat); 
+}
+
+.card_subtitulo{
+    padding-left: 10px;
+    font-family: var(--lato); 
+}
+
+.card_conteudo{
+    width: 320px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    font-family: var(--lato); 
+}
+
+.mais{
+    display: flex;
+    justify-content: flex-end;  
+    padding: 10px 45px; 
+    
+}
+
+/* MAIN DA SUA PAGE */
+
+
+/*TABLET 768px to 1170 px */
+@media(max-width: 1169px){
+
+}
+
+
+/*SMARTPHONE 360px to 767px*/
+@media(max-width: 767px){
+    header{
+        position: absolute;    
+    }
+
+    .banner{
+        background-image: none;
+        height: 80px;
+    }
+
+    .bloco{
+        background-image: linear-gradient(rgba(71, 42, 76, 1), rgba(71, 42, 76, 1));
+
+    }
+    
+
+    .pesquisa{
+        visibility: hidden; 
+    }
+
+    .box{
+        visibility: hidden; 
+    }
+
+    .menu{
+        visibility: hidden;  
+    }
+
+    .grupo{
+        width: 368px;
+    }  
+    
+    .grupo_total{
+        width: 767px;
+        
+    }
+
+    .mais{
+        justify-content: flex-start;  
+        
+    }
+
+    .container{
+        width: 767px;
+        margin: auto;
+    }
+
+    .caixa_central{
+        width: 767px;
+        margin: auto;
+        
+    }
+
+    #menu_superior{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu_inferior ul{
+        visibility: hidden;
+    }
+
+    footer{ 
+        text-align: center;
+        padding: 15px 0px;
+    }
+    .footer_position{
+        justify-content: center;
+        width: 767px;
+    }
+    .footer_style{
+        text-align: left;
+    }
+    .footer_style p{
+        font-size: 12px;
+    }
+    .footer_style a{
+        font-size: 10px;
+    }
+    .footer_style img{
+        margin: 0px 10px 0px 0px;
+        height: 30px;
+        width: 20px;
+        height: 20px;
+    }
+}
