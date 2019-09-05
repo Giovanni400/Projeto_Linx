@@ -2,12 +2,12 @@
 
 /* USO GERAL */
 :root{
-    --roxo: #472A4C;
-    --branco: White;
+    --roxo: #472A4C; /* RGB: 71,42,76 */
+    --branco: white;
     --cinza: #F5F5F5;
-    --montserrat: 'Montserrat', sans-serif;
-    --lato: 'Lato', sans-serif;
-    --laranja: #E18000;
+    --laranja: #FFB65C;
+    --mont: 'Montserrat';
+    --lato: 'Lato';
 }
 *{
     margin: 0;
@@ -19,32 +19,20 @@
     width: 1200px;
     margin: auto;
 }
-.card_style{
-    -webkit-box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
-    -moz-box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
-    box-shadow: 5px 5px 30px -10px rgba(204,204,204,1);
-
-    background-color: var(--fundo);
-    border-radius: 4px;
-
-    /* width: a definir, height: a definir */
-}
 
 /* INÍCIO DO HEADER */
 header{
     position: fixed;
     width: 100%;
     top: 0;
-    
 }
-
 .header_position{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .header_position img{
-    height: 70px;
+    height: 60px;
 }
 header ul{
     display: flex;
@@ -53,15 +41,14 @@ header ul{
 }
 #menu_superior{
     background-color: #472A4C;
-    padding: 13px 0px;
+    padding: 4px 0px;
 }
 #menu_superior ul li{
     background-color: var(--branco);
     border-radius: 20px;
     text-align: center;
     width: 140px;
-    height: 18px;
-    padding: 3px 0px;
+    padding: 2px 0px;
     margin: 0px 0px 0px 20px;
 }
 #menu_superior ul a{
@@ -69,25 +56,27 @@ header ul{
     text-decoration: none;
 }
 #menu_inferior{
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
-    box-shadow: 0px 5px 10px 0px rgba(204,204,204,1);
+    -webkit-box-shadow: 0px 0px 35px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 35px -14px rgba(0,0,0,1);
+    box-shadow: 0px 0px 35px -14px rgba(0,0,0,1);
 
-    background-color: #F5F5F5;
-    padding: 38px 0px; 
+    background-image: linear-gradient(#efefef, #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5, #f5f5f5, #efefef);
+    padding: 28.5px 0px; 
 }
 #menu_inferior ul a{
     color: var(--roxo);
     text-decoration: none;
     margin: 0px 0px 0px 40px;
-    font-size: 22px;
+    font-size: 20px;
 }
+#menu_inferior ul a:hover, .ativo{
+    border-bottom: 1px solid var(--roxo);
+    padding: 0px 0px 2px;
+} /*novo conteudo - verificar com o grupo */
 
 /* INÍCIO DO FOOTER */
 footer{
-    -webkit-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
-    -moz-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
-    box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+    background-image: linear-gradient(#3A233D, var(--roxo), var(--roxo), var(--roxo), var(--roxo),#3A233D);
 
     background-color: var(--roxo);
     text-align: center;
@@ -104,13 +93,12 @@ footer{
     text-align: left;
 }
 .footer_style p{
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px 0px;
 }
 .footer_style a{
     color: var(--branco);
     text-decoration: none;
-    font-size: 20px;
     margin: 0px 20px 0px 0px;
     display: inline-flex;
     align-items: center;
@@ -120,11 +108,13 @@ footer{
     height: 30px;
 }
 
-/* OBRIGATÓRIO NO MAIN */
+/* NECESSÁRIO NO MAIN */
 main{
-    margin: 200px 0px 0px;
+    margin: 150px 0px 0px;
 }
-
+body{
+    background: var(--cinza);
+}
 /* MAIN DA SUA PAGE */
 
 .caixa_central{
@@ -134,7 +124,7 @@ main{
 }
 
 .banner{
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 565px; /*765*/
@@ -148,7 +138,8 @@ main{
 .bloco{
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     /*background-color: var(--branco);*/
-    padding: 50px 100%;
+    padding: 50px 0px;
+    width: 100%;
     color: white;
 }
 
@@ -158,7 +149,7 @@ main{
 
 .bloco_titulo_2{
     font-size: 25px;
-    width: 600px;
+    
 }
 
 .pesquisa{
@@ -192,24 +183,49 @@ main{
     display: flex;
     justify-content: center; 
     text-align: center;
+    
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
-    width: 775px;
+    width: 800px;
     list-style: none;
     padding-top: 20px;
     margin-bottom: 30px;
+    
 }
 
-.menu a{
+/*.menu a{
     text-decoration-line: none;
     background-color: var(--roxo);
     color: var(--branco);
     padding: 8px 30px;
     border-radius: 10px;
     font-family: var(--lato); 
+}*/
+
+button img{
+    width: 32px;
+    padding: 3px 0px 0px;
+}
+button{
+    color: var(--branco);
+    background-color: var(--roxo);
+    border: 1px solid var(--roxo);
+    border-radius: 10px;
+    font-size: 18px;
+    width: 110px;
+    height: 40px;
+    margin: 0px 5px;
+}
+
+input{
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0.5px solid var(--roxo);
+    padding: 6px 432px 6px 9px;
+    margin: 0px 20px 0px 5px;
 }
 
 .linha_laranja{
@@ -234,16 +250,17 @@ main{
     flex-wrap: wrap;  
 }
 
-.cards{
-    -webkit-box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
-    box-shadow: 0px 0px 30px -14px rgba(0,0,0,1);
-
+.card{
+    -webkit-box-shadow: 0px 0px 20px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 20px -14px rgba(0,0,0,1);
+    box-shadow: 0px 0px 20px -14px rgba(0,0,0,1);
     background-color: white;
-    border-radius: 10px;
+}
 
+.cards{
+    border-radius: 10px;
     margin-top: 40px;
-    width: 350px;
+    width: 350px; 
 }
 
 .img{
@@ -288,96 +305,137 @@ main{
 /* MAIN DA SUA PAGE */
 
 
-/*TABLET 768px to 1170 px */
+/*TABLET 768px to 1169 px */
 @media(max-width: 1169px){
+    header{
+        position: static;    
+    }
+
+    .container{
+        width: 800px;
+        margin: auto;
+    }
+
+    .container ul{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #menu_inferior .header_position{
+        width: 500px;   
+    }
+
+    #menu_inferior ul a{
+        font-size: 10px;    
+    }  
+    
+    main{
+        margin: 0px;
+    }   
+
+    .caixa_central{
+        width: auto;
+        margin: auto;
+        
+    }
+
+    .grupo_total{
+        
+        margin: auto;
+        width: auto;
+    }
+
+    .grupo{
+        margin: auto;
+        width: 750px;
+        
+    }  
+
+    .linha_laranja{
+        width: auto;
+    }
+
+    .footer_position{
+        width: 750px;
+    }
+    
 
 }
 
 
 /*SMARTPHONE 360px to 767px*/
 @media(max-width: 767px){
+    main{
+        margin: 0px;
+    } 
+
     header{
-        position: absolute;    
+        position: static;            
     }
 
     .banner{
+        height: 178px;
         background-image: none;
-        height: 80px;
-    }
-
-    .bloco{
-        background-image: linear-gradient(rgba(71, 42, 76, 1), rgba(71, 42, 76, 1));
-
-    }
-    
-
-    .pesquisa{
-        visibility: hidden; 
-    }
-
-    .box{
-        visibility: hidden; 
-    }
-
-    .menu{
-        visibility: hidden;  
-    }
-
-    .grupo{
-        width: 368px;
-    }  
-    
-    .grupo_total{
-        width: 767px;
-        
-    }
-
-    .mais{
-        justify-content: flex-start;  
-        
+        background-color: #3A233D;
     }
 
     .container{
-        width: 767px;
+        width: 350px;
         margin: auto;
     }
 
-    .caixa_central{
-        width: 767px;
-        margin: auto;
+    #menu_inferior .header_position ul{
+        display: none;  
+    }
+
+    #menu_superior ul a{
+        font-size: 10px;  
+    }
+
+    #menu_superior ul li{
+        margin: 0px 10px;
+
+    }
+
+    #menu_inferior .header_position{
+        width: 350px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .bloco{
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+    .pesquisa{
+        display: none;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .footer_position{
+        width: auto;
+        display: flex;
+        flex-direction: column;
         
     }
 
-    #menu_superior{
-        display: flex;
-        justify-content: center;
+    .footer_style .off{
+        display: none;
     }
 
-    #menu_inferior ul{
-        visibility: hidden;
-    }
-
-    footer{ 
-        text-align: center;
-        padding: 15px 0px;
-    }
-    .footer_position{
-        justify-content: center;
-        width: 767px;
-    }
-    .footer_style{
-        text-align: left;
-    }
-    .footer_style p{
-        font-size: 12px;
-    }
     .footer_style a{
-        font-size: 10px;
+        text-align: left;
+        margin: 10px 0px 0px;
     }
-    .footer_style img{
-        margin: 0px 10px 0px 0px;
-        height: 30px;
-        width: 20px;
-        height: 20px;
+
+    .footer_style div{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        
     }
 }
