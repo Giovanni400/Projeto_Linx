@@ -725,6 +725,7 @@ h2{
     align-items: flex-end;
     width: 600px;
 }
+
 .prod_h{
     text-align: center;
     text-decoration-line: underline;
@@ -767,6 +768,7 @@ h2{
     background-color: var(--roxo);
     border: none;
     width: 70px; 
+    background-color: transparent;
 }
 .btn_cad_1{
     color: var(--branco);
@@ -1012,6 +1014,86 @@ h2{
     }
     /* --------------------------------------------------------------CADASTRO TABLET*/
 
+    .tit_cad{
+        width: 700px;
+    }
+
+    .prod_h_titulo{
+        width: 700px;
+    }
+
+    .card_cadastro{
+        width: 700px;   
+    }
+
+    .form{
+        width: 700px;        
+    }
+
+    .formulario{
+        width: 500px;
+        margin-left: 30px;  
+    }
+
+    .txt_cad{
+        width: 400px;
+    }
+
+    .form_box1{
+        width: 700px; 
+            
+    }
+
+    .form_box2{
+        width: 700px;        
+    }
+
+    .form_box3{
+        width: 700px;        
+    }
+
+    .txt_1{
+        width: 220px;
+    }
+
+    .txt_2{
+        width: 220px;
+    }
+
+    .box_1{
+        width: 300px;
+    }
+
+    .grupo_cad{
+        margin-left: 30px;
+    }
+
+    .linha_laranja_cad{
+        width: 700px;
+    }
+
+    .prod_h{
+        width: 700px;
+    }
+
+    .btn_cad{
+        background-color: transparent;
+        margin-top: 115px;
+    }
+
+    .card_total_cad{
+        width: 500px;
+        height: 500px;
+    }
+
+    .card_prod{
+        width: 500px;
+        height: 400px;
+    }
+
+    .crd{
+        margin-bottom: 20px;
+    }
     /* --------------------------------------------------------------LOGIN TABLET*/    
     
 
