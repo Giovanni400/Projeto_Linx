@@ -151,7 +151,7 @@ body{
     width: 100%;
     padding: 30px 0px;
 }
-h1{
+.tituloh1{
     color: var(--roxo);
     font-family: var(--mont);
     font-size: 40px;
@@ -175,12 +175,13 @@ h1{
     width: 700px;
     height: 80px;
 }
-input{
+.input_style{
     border-radius: 10px;
     font-size: 20px;
     border: 0.5px solid var(--roxo);
-    padding: 6px 317px 6px 10px;
+    padding: 7.5px 10px;
     margin: 0px 5px;
+    width: 628px;
 }
 .button_conj img{
     width: 32px;
@@ -264,7 +265,7 @@ h3{
 }
 
 .bloco{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65));
     padding: 30px 0px;
     width: 100%;
     color: var(--roxo);
@@ -309,10 +310,10 @@ h3{
 
 .linha_laranja{
     background-color: var(--laranja); 
-    color: var(--branco);
+    color: var(--roxo);
     text-align: center;
-    padding: 10px 0px;
-    font-size: 22px;   
+    padding: 25px 0px;
+    font-size: 25px;   
     
 }
 
@@ -373,6 +374,7 @@ h3{
     padding: 10px 45px; 
     
 }
+
 /* ---------------------------------------------------------------FIM DA PAGINA RECEITAS-----------------------------------------------  */
 
 /* ---------------------------------------------------------------INICÍO DA PAGINA LOGIN-----------------------------------------------  */
@@ -790,9 +792,12 @@ h2{
 }
 /* ---------------------------------------------------------------FIM DA PAGINA CADASTROS-----------------------------------------------  */
 
+/* ---------------------------------------------------------------INICIO DA PAGINA HOME-----------------------------------------------  */
+
 .home{
     background-color: var(--branco);
-    width: 100vw;
+    width: 100%;
+    font-size: 20px;
 }
 .banner_home{
     background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(../img/home.jpg);
@@ -816,7 +821,7 @@ h2{
 .logoslogan_home img{
     height: 300px;
 }
-h2{
+.tituloh2{
     color:var(--roxo);
     font-family: var(--mont);
     font-size: 32px;
@@ -855,9 +860,16 @@ h2{
 .text_home1{
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     color: var(--roxo);
     padding: 30px 60px;
+}
+.text_home2 p, .text1 p, .subtext_home1, .subtext_home2{
+    text-align: justify;
+    font-size: 20px;
+}
+.subtext_home1, .subtext_home2{
+    margin: 0px 20px;
 }
 .text_home2{
     display: flex;
@@ -886,7 +898,7 @@ h2{
     line-height: none;
     color: var(--roxo);
     font-size: 25px;
-    padding: 0px 40px;
+    padding: 0px 80px;
 }
 /* -------------------------------------------------------FIM DA PAGINA HOME---------------------------------------------------------------------------------  */
 
@@ -896,12 +908,12 @@ h2{
 
 /*TABLET 768px to 1200 px */
 @media(max-width: 1200px){
-    /* --------------------------------------------------------------------EDIÇÃO GERAL */
+    /* --------------------------------------------------------------------EDIÇÃO GERAL TABLET*/
     .container{
         width: 700px;
     }
 
-    /* --------------------------------------------------------------------HEADER */
+    /* --------------------------------------------------------------------HEADER TABLET*/
     #menu_inferior .header_position{
         width: 700px;   
     }
@@ -910,7 +922,7 @@ h2{
         font-size: 16px;
     }
 
-    /* --------------------------------------------------------------------COLABORADORES */
+    /* --------------------------------------------------------------------COLABORADORES TABLET*/
     .card_colab{
         display: inline-flex;
         flex-direction: column;
@@ -921,7 +933,7 @@ h2{
         display: none;
     }
 
-    /* --------------------------------------------------------------------RECEITAS */
+    /* --------------------------------------------------------------------RECEITAS TABLET*/
     .caixa_central{
         width: auto;
         margin: auto;
@@ -937,21 +949,24 @@ h2{
     .linha_laranja{
         width: auto;
     }
-    /* --------------------------------------------------------------------PERFIL */
-    .titulo-perfil {
+
+    /* --------------------------------------------------------------------PERFIL TABLET*/
+    .titulo-perfil{
         font-size: 15pt;
     }
-    .dados-pessoais {
+    .dados-pessoais{
         width: 90%;
         margin: auto;
         flex-flow: column wrap;
     }
-    .contato, .endereco {
+    .contato, .endereco{
         width: 50%;
         padding: 0;
     }
-    .endereco{margin: 0px 0px 0px 8px;}
-    .dados, .row-form, .dados-contato, .texto-card {
+    .endereco{
+        margin: 0px 0px 0px 8px;
+    }
+    .dados, .row-form, .dados-contato, .texto-card{
         margin: 10px;
         padding: 10px;
         width: 100%;
@@ -960,34 +975,34 @@ h2{
         width: 40%;
         height: 80%;
     }
-    .dados-pessoais form {
+    .dados-pessoais form{
         margin: 20px 0px;
         width: 100%;
     }
-    .dados {
+    .dados{
         width: 100%;
         display: flex;
         flex-flow: column wrap;
     }
-    .texto-card {
+    .texto-card{
         width: 90%;
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
-    .informacoes-extras {
+    .informacoes-extras{
         width: 100%;
         padding: 50px 0px 0px;
     }
-    .botoes {
+    .botoes{
         justify-content: space-around;
     }
-    .btn-card {
+    .btn-card{
         margin: 40px 10px;
         width: 25%;
         cursor: pointer;
     }
-    .btn-card:hover {
+    .btn-card:hover{
         font-size: 20px;
     }
     .text-social{
@@ -995,11 +1010,56 @@ h2{
         flex-flow: row wrap;
         font-size: 16px;
     }
+    /* --------------------------------------------------------------CADASTRO TABLET*/
+
+    /* --------------------------------------------------------------LOGIN TABLET*/    
+    
+
+    /* --------------------------------------------------------------HOME TABLET */
+    .banner_home{
+        background-size: cover;
+    }
+    .loganslogan_home{
+        margin-top: 100px;
+    }
+    .logoslogan_home img{
+        height: 200px;
+    }
+    h2{
+        font-size: 28px;
+        margin: auto;
+    }
+    .container_home1{
+        width: 600px;
+    }
+    .text_home1{
+        padding: 25px;
+    }
+    .text_home2{
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_home2 img{
+        height: 150px;
+        width: 200px;
+    }
+    .subtext_home1{
+        padding: 25px 0px 25px 30px;
+    }
+    .subtext_home2{
+        padding: 25px 30px 25px 0px;
+    }
+    .saiba{
+        font-size: 20px;
+        padding: 0px 30px;
+    }
 }
 
 /*SMARTPHONE 360px to 767px*/
 @media(min-width: 360px) and (max-width: 767px){
-    /* --------------------------------------------------------------------EDIÇÃO GERAL */
+    /* --------------------------------------------------------------------EDIÇÃO GERAL MOBILE*/
     .container{
         width: 350px;
     }
@@ -1007,7 +1067,7 @@ h2{
         margin: 0px;
     }
 
-    /* --------------------------------------------------------------------HEADER */
+    /* --------------------------------------------------------------------HEADER MOBILE*/
     header{
         position: static;            
     }
@@ -1017,18 +1077,25 @@ h2{
     #menu_superior ul li{
         margin: 0px 10px;
     }
+    #menu_inferior{
+        text-align: center;
+    }
     #menu_inferior .header_position{
         width: 350px;
         display: inline-flex;
         justify-content: center;
+        align-items: center;
     }
     #menu_inferior .header_position ul{
         display: none;  
     }
     
-    /* --------------------------------------------------------------------COLABORADORES */
+    /* --------------------------------------------------------------------COLABORADORES MOBILE*/
     .colab_banner .p_colab{
         font-size: 25px;
+    }
+    .sp_border{
+        display: none;
     }
     .card_colab{
         display: inline-flex;
@@ -1052,7 +1119,7 @@ h2{
         margin: 20px 0px 0px;
     }
 
-    /* --------------------------------------------------------------------RECEITAS E COLABORADORES */
+    /* ------------------------------------------------------------------RECEITAS E COLABORADORES MOBILE*/
     h1{
         font-size: 30px;
     }
@@ -1060,11 +1127,12 @@ h2{
         display: none;
     }
 
-    /* --------------------------------------------------------------------RECEITAS */
+    /* ---------------------------------------------------------------------RECEITAS MOBILE*/
     .bloco_titulo_2{
         font-size: 25px;
     }
-    /* --------------------------------------------------------------------PERFIL */
+
+    /* ----------------------------------------------------------------------PERFIL MOBILE*/
     .dados-pessoais {
         display: flex;
         flex-wrap: wrap;
@@ -1117,7 +1185,7 @@ h2{
         align-content: space-between
     }
 
-    /* --------------------------------------------------------------------CADASTRO */
+    /* --------------------------------------------------------------------CADASTRO MOBILE*/
     .card_cadastro{
         width: 368px;
         margin: auto;
@@ -1191,26 +1259,87 @@ h2{
     .tit_cad{
         width: 360px;
     }
-   .btn_cad{
-       display: none;
-   }
-   .card_total_cad{
-       width: 368px;
-       display: flex;
-       justify-content: center;
-       height: 1040px;
-   }
-   .crd{
-       margin-top: 30px;
-   }
-   .card_prod{
-       width: 200px;
-   }
-   .parte2{
-       display: none;
-   }
+    .btn_cad{
+        display: none;
+    }
+    .card_total_cad{
+        width: 368px;
+        display: flex;
+        justify-content: center;
+        height: 1040px;
+    }
+    .crd{
+        margin-top: 30px;
+    }
+    .card_prod{
+        width: 200px;
+    }
+    .parte2{
+        display: none;
+    }
+    .container-login{
+        width:80%;
+        margin:auto;
+        height:100%;
+    }
+    .caixa-texto{
+    margin:100%;
+    width:80%;
+    }
 
-    /* --------------------------------------------------------------------FOOTER */
+    /* ------------------------------------------------------------------------LOGIN MOBILE*/
+    
+
+    /* --------------------------------------------------------------HOME MOBILE */
+    .banner_home{
+        background-size: cover;
+    }
+    .loganslogan_home{
+        margin-top: 100px;
+    }
+    .logoslogan_home img{
+        height: 200px;
+    }
+    h2{
+        font-size: 20px;
+        margin: auto;
+    }
+    .container_home{
+        width: 400px;
+    }
+    .text_home1{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .text_home2{
+        padding: 20px 20px 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .inverse{
+        flex-direction: column-reverse;
+    }
+    .text_home img{
+        height: 75px;
+        width: 100px;
+    }
+    .subtext_home1{
+        padding: 10px 10px 0px 10px;
+    }
+    .subtext_home2{
+        padding: 10px 10px 0px 10px;
+    }
+    .saiba{
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* --------------------------------------------------------------FOOTER MOBILE*/
     .footer_position{
         width: auto;
         display: flex;

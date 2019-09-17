@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Xepa Gourmet - Perfil</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xepa Gourmet - Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-    <header> 
+<body>
+    <header>
         <nav id="menu_superior">
             <div class="container">
                 <ul>
+                    <li><a href="#footer_contato">CONTATE-NOS</a></li>
                     <li><a href="login.html">CADASTRE-SE</a></li>
-                    <li><a href="#">CONTATE-NOS</a></li>
-                    <li><a href="login.html">SAIR</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
         <nav id="menu_inferior">
             <div class="container header_position">
-                <a href="#"><img src="img/logo_xepa.svg" alt="Logo do Xepa
-                        Gourmet"></a>
+                <a href="index.html" title="Página inicial">
+                    <img src="img/logo_xepa.svg"
+                        alt="Logo do Xepa Gourmet. Circulo lilás com uma berijela com chapéu de chefe e uma cenoura."></a>
                 <ul>
-                    <li><a href="cadastros.html">CADASTROS</a></li>
-                    <li><a href="perfil.html" class="ativo">PERFIL</a></li>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="colaboradores.html">COLABORADORES</a></li>
-                    <li><a href="receitas.html">RECEITAS</a></li>
+                    <li><a href="cadastros.html" title="Página Cadastros">CADASTROS</a></li>
+                    <li><a href="perfil.html" title="Página Perfil" class="ativo">PERFIL</a></li>
+                    <li><a href="index.html" title="Página Inicial">HOME</a></li>
+                    <li><a href="colaboradores.html" title="Página Colaboradores">COLABORADORES</a></li>
+                    <li><a href="receitas.html" title="Página Receitas">RECEITAS</a></li>
                 </ul>
             </div>
         </nav>
+        </div>
     </header>
     <!-------------------------     START    -------------------------->
     <main>
         <div class="container wrap">
             <div class="dados-pessoais">
-                <img src="img/perfil.png"alt="Foto de perfil
+                <img src="img/perfil.png" alt="Foto de perfil
                     do colaborador.">
                 <form id="frmDadosPessoais">
                     <div class="dados">
@@ -57,103 +59,102 @@
                         <div class="row-form">
                             <span role="text"> Faz entregas?</span>
                             <label for="entregaNo">
-                                <input type="radio" name="entregas"
-                                    id="entregaNo" value="0" title="Não">Não
+                                <input type="radio" name="entregas" id="entregaNo" value="0" title="Não">Não
                             </label>
                             <label for="entregaSi">
-                                <input type="radio" name="entregas"
-                                    id="entregaSi" value="1" title="Sim">Sim
+                                <input type="radio" name="entregas" id="entregaSi" value="1" title="Sim">Sim
                             </label>
                         </div>
-                        <div class="row-form" >
+                        <div class="row-form">
                             <span role="text">Produtos orgânicos?</span>
                             <label for="organicoNo">
-                                <input type="radio" name="organicos"
-                                    id="organicoNo" value="0" title="Não">Não
+                                <input type="radio" name="organicos" id="organicoNo" value="0" title="Não">Não
                             </label>
                             <label for="organicoSi">
-                                <input type="radio" name="organicos"
-                                    id="organicoSi" value="1" title="Sim">Sim
+                                <input type="radio" name="organicos" id="organicoSi" value="1" title="Sim">Sim
                             </label>
                         </div>
                         <div class="row-form">
                             <span role="text">Disponibiliza receitas?<span>
                                     <label for="receitasNo">
-                                        <input type="radio" name="receitas"
-                                            id="receitasNo" value="0"
-                                            title="Não">Não
+                                        <input type="radio" name="receitas" id="receitasNo" value="0" title="Não">Não
                                     </label>
                                     <label for="receitasSi">
-                                        <input type="radio" name="receitas"
-                                            id="receitasSi" value="1"
-                                            title="Sim">Sim
+                                        <input type="radio" name="receitas" id="receitasSi" value="1" title="Sim">Sim
                                     </label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="dados-contato">
-                        <div class="contato card wrap">
-                            <h5>Contato</h5>
-                            <form method="post" id="frmcontato">
-                                <label class="texto-card text-social" id="lblTel">
-                                    <img src="img/tel-ico.png" alt="">
-                                    <span role="text">Telefone:</span>
-                                    (XX) XXXXX-XXXX
-                                </label>
-                                <label class="texto-card text-social" id="lblMail">
-                                    <img src="img/mail-ico.png" alt="">
-                                    <span role="text">E-mail:</span>
-                                    exemplo@exemplo.com
-                                </label>
-                                <label class="texto-card text-social" id="lblFace">
-                                    <img src="img/face-ico.png" alt="">
-                                    <span role="text">Facebook:</span>
-                                    facebook.com/meuface
-                                </label>
-                            </form>
-                        </div>
-                        <div class="endereco card" role="group">
-                            <h5>Endereço</h5>
-                            <p class="texto-card">Alameda Barão de Limeira, 539
-                                - Santa Cecilia, São Paulo - SP, 01202-001</p>
-                            <div class="mapa" role="region">
-                                <iframe class="card"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.8772063050162!2d-46.64695639829928!3d-23.536554112522886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola%20SENAI%20de%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1567704177732!5m2!1spt-BR!2sbr"
-                                    frameborder="0" style="border:0;"
-                                    allowfullscreen=""></iframe>
-                            </div>
                         </div>
                     </div>
-                    <div class="botoes">
-                        <button class="btn-card" title="Excluir conta">
-                            <img src="img/delete_32px.png" alt="Icone lata de
+                </form>
+            </div>
+            <div class="dados-contato">
+                <div class="contato card wrap">
+                    <h5>Contato</h5>
+                    <form method="post" id="frmcontato">
+                        <label class="texto-card text-social" id="lblTel">
+                            <img src="img/tel-ico.png" alt="">
+                            <span role="text">Telefone:</span>
+                            (XX) XXXXX-XXXX
+                        </label>
+                        <label class="texto-card text-social" id="lblMail">
+                            <img src="img/mail-ico.png" alt="">
+                            <span role="text">E-mail:</span>
+                            exemplo@exemplo.com
+                        </label>
+                        <label class="texto-card text-social" id="lblFace">
+                            <img src="img/face-ico.png" alt="">
+                            <span role="text">Facebook:</span>
+                            facebook.com/meuface
+                        </label>
+                    </form>
+                </div>
+                <div class="endereco card" role="group">
+                    <h5>Endereço</h5>
+                    <p class="texto-card">Alameda Barão de Limeira, 539
+                        - Santa Cecilia, São Paulo - SP, 01202-001</p>
+                    <div class="mapa" role="region">
+                        <iframe class="card"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.8772063050162!2d-46.64695639829928!3d-23.536554112522886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola%20SENAI%20de%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1567704177732!5m2!1spt-BR!2sbr"
+                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="btn-card" title="Excluir conta">
+                    <img src="img/delete_32px.png" alt="Icone lata de
                                 lixo"> Excluir conta </button>
-                        <button class="btn-card" title="Editar dados pessoais">
-                            <img src="img/editar.png" alt="Icone lápis."> Editar</button>
-                        <button class="btn-card" title="Salvar edição">
-                            <img src="img/save_32px.png" alt="Icone disquete">
-                            Salvar </button>
-                    </div>
+                <button class="btn-card" title="Editar dados pessoais">
+                    <img src="img/editar.png" alt="Icone lápis."> Editar</button>
+                <button class="btn-card" title="Salvar edição">
+                    <img src="img/save_32px.png" alt="Icone disquete">
+                    Salvar </button>
+            </div>
+        </div>
+    </main>
+    <!----------------------- GAME OVER ---------------------------->
+    <footer id="footer_contato">
+        <div class="container footer_position">
+            <div class="footer_style">
+                <p>ENTRE EM CONTATO CONOSCO</p>
+                <a href="www.gmail.com" title="E-mail Xepa Gourmet.">
+                    <img src="img/gmail.png"
+                        alt="Logo do Gmail. Envelope branco vazado, onde as laterais e a parte inferior da aba, formam a letra M. ">xepagourmet@gmail.com
+                </a>
+            </div>
+            <div class="footer_style">
+                <p class="off">ACOMPANHE NOSSAS REDES SOCIAIS</p>
+                <div>
+                    <a href="www.facebook.com.br" title="Facebook Xepa Gourmet.">
+                        <img src="img/facebook.png"
+                            alt="Logo do Facebook. Quadrado branco com pontas arredondadas, com vazado na forma da letra F.">/xepasenaicodexp
+                    </a>
+                    <a href="www.instagram.com.br" title="Instagram Xepa Gourmet.">
+                        <img src="img/instagram.png"
+                            alt="Logo do Instagram. Quadrado branco vazado com um circulo no centro, também vazado que forma a lente de uma câmera.">@xepagourmet_6
+                    </a>
                 </div>
-            </main>
-            <!----------------------- GAME OVER ---------------------------->
-            <footer>
-                <div class="container footer_position">
-                    <div class="footer_style">
-                        <p>ENTRE EM CONTATO CONOSCO</p>
-                        <a href="#"><img src="img/gmail.png" alt="Logo do
-                                Gmail">xepagourmet@gmail.com</a>
-                    </div>
-                    <div class="footer_style">
-                        <p class="off">ACOMPANHE NOSSAS REDES SOCIAIS</p>
-                        <div>
-                            <a href="#"><img src="img/facebook.png" alt="Logo do Facebook">/xepasenaicodexp</a>
-                            <a href="#"><img src="img/instagram.png" alt="Logo do Instagram">@xepagourmet_6</a>
-                        </div>
-                    </div>
-                </div>
-                <p>&copy;2019 | XEPA GOURMET</p>
-            </footer> 
-        </body>
-    </html>
+            </div>
+        </div>
+        <p>&copy;2019 | XEPA GOURMET</p>
+    </footer>
+</body>
+</html>

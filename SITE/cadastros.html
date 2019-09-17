@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Xepa Gourmet - Cadastros</title>
+    <title>Xepa Gourmet - Cadastro</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,34 +14,38 @@
         <nav id="menu_superior">
             <div class="container">
                 <ul>
+                    <li><a href="#footer_contato">CONTATE-NOS</a></li>
                     <li><a href="login.html">CADASTRE-SE</a></li>
-                    <li><a href="#">CONTATE-NOS</a></li>
-                    <li><a href="login.html">SAIR</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
         <nav id="menu_inferior">
             <div class="container header_position">
-                <a href="#"><img src="img/logo_xepa.svg" alt="Logo do Xepa Gourmet"></a>
+                <a href="index.html" title="Página inicial">
+                    <img src="img/logo_xepa.svg"
+                        alt="Logo do Xepa Gourmet. Circulo lilás com uma berijela com chapéu de chefe e uma cenoura."></a>
                 <ul>
-                    <li><a href="cadastros.html" class="ativo">CADASTROS</a></li>
-                    <li><a href="perfil.html">PERFIL</a></li>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="colaboradores.html">COLABORADORES</a></li>
-                    <li><a href="receita.html">RECEITAS</a></li>
+                    <li><a href="cadastros.html" title="Página Cadastros" class="ativo">CADASTROS</a></li>
+                    <li><a href="perfil.html" title="Página Perfil">PERFIL</a></li>
+                    <li><a href="index.html" title="Página Inicial">HOME</a></li>
+                    <li><a href="colaboradores.html" title="Página Colaboradores">COLABORADORES</a></li>
+                    <li><a href="receitas.html" title="Página Receitas">RECEITAS</a></li>
                 </ul>
             </div>
         </nav>
         </div>
     </header>
-    
+
     <main>
         <section>
             <br>
             <br>
-            <div class="container">     
+            <div class="container">
                 <div class="card_cadastro">
-                    <div class="tit_cad"><h1 class="prod_h_titulo">CADASTRO DE PRODUTO</h1></div>
+                    <div class="tit_cad">
+                        <h1 class="prod_h_titulo tituloh1">CADASTRO DE PRODUTO</h1>
+                    </div>
 
                     <div class="formulario">
                         <img src="img/foto_legume.png" alt="">
@@ -52,11 +56,12 @@
                             <input class="txt_cad" type="text" placeholder="Digite o nome do produto">
                             <br>
                             <label class="label_cad">Categoria</label>
-                            <br> <!--VERIFICAR COM O PESSOAL-->
+                            <br>
+                            <!--VERIFICAR COM O PESSOAL-->
                             <input class="txt_cad" type="text" placeholder="Digite a categoria">
                         </form>
                     </div>
-                
+
 
                     <div class="formulario">
                         <form class="form_box2">
@@ -69,7 +74,7 @@
                             <div class="box_1">
                                 <label class="label_cad">Etiquete seu produto</label>
                                 <br>
-                                <input class="txt_2" type="text" placeholder="Digite uma etiqueta para seu produto">   
+                                <input class="txt_2" type="text" placeholder="Digite uma etiqueta para seu produto">
                             </div>
                         </form>
                     </div>
@@ -104,7 +109,7 @@
                 <h2 class="prod_h">PRODUTOS CADASTRADOS</h2>
                 <div class="card_total_cad">
                     <button class="btn_cad"><img src="img/anterior.png" alt=""></button>
-                    <div class="card_prod">                    
+                    <div class="card_prod">
                         <div class="card crd">
                             <img src="img/foto_legume.png" alt="">
                             <p>Alcachofra</p>
@@ -152,14 +157,14 @@
                     <button class="btn_cad"><img src="img/proximo.png" alt=""></button>
                 </div>
             </div>
-            
+
 
             <div class="container parte2">
                 <div class="linha_laranja_cad"></div>
                 <h2 class="prod_h">RECEITAS CADASTRADAS</h2>
                 <div class="card_total_cad">
                     <button class="btn_cad"><img src="img/anterior.png" alt=""></button>
-                    <div class="card_prod">                    
+                    <div class="card_prod">
                         <div class="card crd">
                             <img src="img/foto_legume.png" alt="">
                             <p>Alcachofra</p>
@@ -209,22 +214,30 @@
             </div>
         </section>
     </main>
-    
-    <footer>
+    <footer id="footer_contato">
         <div class="container footer_position">
             <div class="footer_style">
                 <p>ENTRE EM CONTATO CONOSCO</p>
-                <a href="#"><img src="img/gmail.png" alt="Logo do Gmail">xepagourmet@gmail.com</a>
+                <a href="www.gmail.com" title="E-mail Xepa Gourmet.">
+                    <img src="img/gmail.png"
+                        alt="Logo do Gmail. Envelope branco vazado, onde as laterais e a parte inferior da aba, formam a letra M. ">xepagourmet@gmail.com
+                </a>
             </div>
             <div class="footer_style">
                 <p class="off">ACOMPANHE NOSSAS REDES SOCIAIS</p>
                 <div>
-                    <a href="#"><img src="img/facebook.png" alt="Logo do Facebook">/xepasenaicodexp</a>
-                    <a href="#"><img src="img/instagram.png" alt="Logo do Instagram">@xepagourmet_6</a>
+                    <a href="www.facebook.com.br" title="Facebook Xepa Gourmet.">
+                        <img src="img/facebook.png"
+                            alt="Logo do Facebook. Quadrado branco com pontas arredondadas, com vazado na forma da letra F.">/xepasenaicodexp
+                    </a>
+                    <a href="www.instagram.com.br" title="Instagram Xepa Gourmet.">
+                        <img src="img/instagram.png"
+                            alt="Logo do Instagram. Quadrado branco vazado com um circulo no centro, também vazado que forma a lente de uma câmera.">@xepagourmet_6
+                    </a>
                 </div>
             </div>
         </div>
-        <p>© 2019 | XEPA GOURMET</p>
+        <p>&copy;2019 | XEPA GOURMET</p>
     </footer>
 </body>
 
