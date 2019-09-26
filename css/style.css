@@ -1347,6 +1347,12 @@ h2 {
         display: none;
     }
 
+
+    .tituloh1 {
+        font-size: 30px;
+    }
+    
+
     /* ---------------------------------------------------------------------RECEITAS MOBILE*/
     .bloco_titulo_2 {
         font-size: 25px;
