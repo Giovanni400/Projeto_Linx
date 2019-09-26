@@ -1346,10 +1346,30 @@ h2 {
     .form_style {
         display: none;
     }
+
     /* ---------------------------------------------------------------------RECEITAS MOBILE*/
     .bloco_titulo_2 {
         font-size: 25px;
     }
+
+    .caixa_central {
+        width: auto;
+        margin: auto;
+    }
+    .grupo_total {
+        margin: auto;
+        width: auto;
+    }
+    .grupo {
+        margin: auto;
+        width: 350px;
+    }
+    .linha_laranja {
+        width: auto;
+    }
+
+
+
     /* ----------------------------------------------------------------------PERFIL MOBILE*/
     .dados-pessoais {
         display: flex;
