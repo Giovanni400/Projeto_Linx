@@ -928,12 +928,15 @@ h2 {
 }
 
 .logoslogan_home {
+    /* background-color: rgba(0, 0, 0, 0.4); */
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     margin-bottom: 150px;
+    /* padding-top: 39vh;
+    padding-bottom: 38vh; */
 }
 
 .logoslogan_home img {
@@ -1261,7 +1264,9 @@ h2 {
     }
     .tituloh2 {
         font-size: 28px;
-        margin: auto;
+        /* margin: auto; */
+        margin-bottom: 50px;
+        
     }
     .container_home1 {
         width: 600px;
@@ -1602,7 +1607,8 @@ h2 {
     }
     .tituloh2 {
         font-size: 20px;
-        margin: auto;
+        /* margin: auto; */
+        margin-bottom: 15px;
     }
     .container_home {
         width: 400px;
