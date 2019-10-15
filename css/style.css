@@ -1269,8 +1269,13 @@ h2 {
         
     }
     .container_home1 {
+        width: 500px;
+    }
+
+    .container_home {
         width: 600px;
     }
+
     .text_home1 {
         padding: 25px;
     }
@@ -1279,13 +1284,15 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     .text_home2 img {
-        height: 150px;
-        width: 200px;
+        height: 170px; /*150*/
+        width: 220px; /*200*/
     }
     .subtext_home1 {
         padding: 25px 0px 25px 30px;
+        /* width: 300px; */
     }
     .subtext_home2 {
         padding: 25px 30px 25px 0px;
@@ -1611,7 +1618,8 @@ h2 {
         margin-bottom: 15px;
     }
     .container_home {
-        width: 400px;
+        width: 300px;
+        align-items: center;
     }
     .text_home1 {
         padding: 20px;
@@ -1619,11 +1627,12 @@ h2 {
         align-items: center;
     }
     .text_home2 {
-        padding: 20px 20px 10px 20px;
+        padding: 20px 0px 20px 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        width: 300px;
     }
     .inverse {
         flex-direction: column-reverse;
@@ -1632,8 +1641,14 @@ h2 {
         height: 75px;
         width: 100px;
     }
+
+    .text_home2 img {
+        height: 150px;
+        width: 220px;
+    }
+
     .subtext_home1 {
-        padding: 10px 10px 0px 10px;
+        padding: 10px 10px 0px 10px; 
     }
     .subtext_home2 {
         padding: 10px 10px 0px 10px;
