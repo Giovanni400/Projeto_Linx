@@ -60,7 +60,7 @@ header ul {
     text-align: center;
     width: 140px;
     padding: 2px 0px;
-    margin: 0px 0px 0px 20px;
+    margin: 5px 0px 5px 20px;
 }
 
 #menu_superior ul a {
@@ -916,7 +916,7 @@ h2 {
 }
 
 .banner_home {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: top center;
@@ -929,7 +929,7 @@ h2 {
 
 .logoslogan_home {
     /* background-color: rgba(0, 0, 0, 0.4); */
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1012,16 +1012,16 @@ h2 {
 .text_home2 img {
     opacity: 0.8;
     border-radius: 16px;
-    height: 200px;
-    width: 240px;
+    height: 250px; /*200px*/
+    width: 340px; /*240px*/
 }
 
 .subtext_home1 {
-    padding: 25px 0px 25px 15px;
+    padding: 25px 0px 25px 50px;
 }
 
 .subtext_home2 {
-    padding: 25px 0px 25px 15px;
+    padding: 25px 50px 25px 15px;
 }
 
 .saiba {
