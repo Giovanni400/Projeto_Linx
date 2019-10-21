@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xepa Gourmet - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="menu_superior">
+            <div class="container">
+                <ul>
+                    <li><a href="#footer_contato">CONTATE-NOS</a></li>
+                    <li><a href="login.html">CADASTRE-SE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="menu_inferior">
+            <div class="container header_position">
+                <a href="index.html" title="Página inicial">
+                    <img src="img/logo_xepa.svg"
+                        alt="Logo do Xepa Gourmet. Circulo lilás com uma berijela com chapéu de chefe e uma cenoura."></a>
+                <ul>
+                    <li><a href="cadastros.html" title="Página Cadastros" class="ativo">CADASTROS</a></li>
+                    <li><a href="perfil.html" title="Página Perfil">PERFIL</a></li>
+                    <li><a href="index.html" title="Página Inicial">HOME</a></li>
+                    <li><a href="colaboradores.html" title="Página Colaboradores">COLABORADORES</a></li>
+                    <li><a href="receitas.html" title="Página Receitas">RECEITAS</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div id="card_cadastro">
+                    <span>CADASTRO DE RECEITA</span>
+                    
+                    <div id="caixa_total">
+                        <div id="caixa_parte_imagem">
+                            <img class="img_cad_receita" src="img/food_af.jpg" alt="Imagem de um prato com macarrão ao molho">
+                            <form action="GET">
+                                <button class="botao" type="button" name="Inserir IMG">Inserir IMG</button>
+                            </form>                            
+                        </div>
+
+                        <div id="caixa_parte_conteudo">
+                            <form class="form_caixa" action="GET">
+                                <label for="nome_lbl" aria-label="nome_lbl"> Nome</label>
+                                <input class="caixa-texto" type="nome_receita" placeholder="Digite o nome da receita" name="nome_receita" id="nome_receita">  
+                                
+                                <div class="caixa_texto">
+                                    <div class="caixa_texto_sub">
+                                        <label for="ingrediente_lbl" aria-label="ingrediente_lbl"> Ingredientes</label><br>
+                                        <input class="caixa_texto_componente_bt" type="ingrediente_receita" placeholder="Digite os ingredientes" name="ingrediente_receita" id="ingrediente_receita"> 
+                                    </div>
+                                    
+                                    <div class="caixa_texto_sub">
+                                        <label for="modo_lbl" aria-label="modo_lbl"> Modo de Preparo</label><br>
+                                        <input class="caixa_texto_componente_bt" type="modo_receita" placeholder="Digite o modo de preparo" name="modo_receita" id="modo_receita"> 
+                                    </div>
+                                </div>                             
+
+                                <div class="caixa_texto_botoes">
+                                    <button class="botao" type="button" name="Inserir IMG">Salvar</button>
+                                    <button class="botao" type="button" name="Inserir IMG">Limpar</button>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="linha"></div>
+                <div class="tit_receitar">
+                    <span>RECEITAS CADASTRADAS</span>
+                </div>
+
+                <div class="card_">
+                    <div class="card_branco">
+                        <img src="img/food_af.jpg" alt="Cartão de receitas já cadastrados">
+                        <p>Xepa 1</p>
+                        <p>Ingredientes</p>
+                        <p>Modo de Preparo</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+
+                    <div class="card_branco">
+                        <img src="img/food_af.jpg" alt="Cartão de receitas já cadastrados">
+                        <p>Xepa 2</p>
+                        <p>Ingredientes</p>
+                        <p>Modo de Preparo</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+
+                    <div class="card_branco">
+                        <img src="img/food_af.jpg" alt="Cartão de receitas já cadastrados">
+                        <p>Xepa 3</p>
+                        <p>Ingredientes</p>
+                        <p>Modo de Preparo</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+
+                    <div class="card_branco">
+                        <img src="img/food_af.jpg" alt="Cartão de receitas já cadastrados">
+                        <p>Xepa 4</p>
+                        <p>Ingredientes</p>
+                        <p>Modo de Preparo</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+                </div>
+
+                <div class="mais">
+                    <a href="#" title="Ver mais receitas">
+                    <img src="img/mais.png"
+                    alt="Ícone de adição, representando ver mais."></a>
+                </div>
+
+            </div>
+        </section>                    
+    </main>
+    <footer id="footer_contato">
+        <div class="container footer_position">
+            <div class="footer_style">
+                <p>ENTRE EM CONTATO CONOSCO</p>
+                <a href="www.gmail.com" title="E-mail Xepa Gourmet.">
+                    <img src="img/gmail.png"
+                        alt="Logo do Gmail. Envelope branco vazado, onde as laterais e a parte inferior da aba, formam a letra M. ">xepagourmet@gmail.com
+                </a>
+            </div>
+            <div class="footer_style">
+                <p class="off">ACOMPANHE NOSSAS REDES SOCIAIS</p>
+                <div>
+                    <a href="www.facebook.com.br" title="Facebook Xepa Gourmet.">
+                        <img src="img/facebook.png"
+                            alt="Logo do Facebook. Quadrado branco com pontas arredondadas, com vazado na forma da letra F.">/xepasenaicodexp
+                    </a>
+                    <a href="www.instagram.com.br" title="Instagram Xepa Gourmet.">
+                        <img src="img/instagram.png"
+                            alt="Logo do Instagram. Quadrado branco vazado com um circulo no centro, também vazado que forma a lente de uma câmera.">@xepagourmet_6
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>&copy;2019 | XEPA GOURMET</p>
+    </footer>
+</body>
+
+</html>

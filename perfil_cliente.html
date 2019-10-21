@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xepa Gourmet - Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="menu_superior">
+            <div class="container">
+                <ul>
+                    <li><a href="#footer_contato">CONTATE-NOS</a></li>
+                    <li><a href="login.html">CADASTRE-SE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="menu_inferior">
+            <div class="container header_position">
+                <a href="index.html" title="Página inicial">
+                    <img src="img/logo_xepa.svg"
+                        alt="Logo do Xepa Gourmet. Circulo lilás com uma berijela com chapéu de chefe e uma cenoura."></a>
+                <ul>
+                    <li><a href="cadastros.html" title="Página Cadastros">CADASTROS</a></li>
+                    <li><a href="perfil.html" title="Página Perfil" class="ativo">PERFIL</a></li>
+                    <li><a href="index.html" title="Página Inicial">HOME</a></li>
+                    <li><a href="colaboradores.html" title="Página Colaboradores">COLABORADORES</a></li>
+                    <li><a href="receitas.html" title="Página Receitas">RECEITAS</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!-------------------------     START    -------------------------->
+    <main>
+        <section>
+            <div class="container">
+                <div class="caixa_cad_colaborador">
+                    <span>CADASTRO CLIENTE</span><br>
+                </div> 
+            
+                <div class="caixa_cadastro">
+                    <div class="linha_perfil_colab"></div>
+                    <span>Informações</span><br>
+                    <div>
+                        <form class="form_caixa" action="GET">
+                            <div id="p_nome">
+                                <label for="nome_prod_lbl" aria-label="nome_prod_lbl"> Nome</label> <br>
+                                <input class="caixa-texto" type="nome_produtor" placeholder="Digite seu nome" name="nome_prod" id="nome_prod"> 
+                            </div>
+
+                            <label for="telefone_lbl" aria-label="telefone_lbl"> Telefone</label><br>
+                            <input class="caixa-texto" type="telefone" placeholder="(xx) xxxxx - xxxx" name="telefone_produtor" id="telefone_produto"> 
+                            <br>
+                            <label for="telefone2_lbl" aria-label="telefone2_lbl"> Telefone 2° Opção</label><br>
+                            <input class="caixa-texto" type="telefone2" placeholder="(xx) xxxxx - xxxx" name="telefone2_produtor" id="telefone2_produto"> 
+                            <br>
+                            <div id="p_email">
+                                <label for="email_lbl" aria-label="email_lbl"> E-mail</label><br>
+                                <input class="caixa-texto" type="email" placeholder="exemplo@exemplo.com.br" name="email_produtor" id="email_produto">
+                                <br>
+                            </div>
+                        </form>            
+                    
+                        <div class="linha_perfil_colab"></div>
+                        <span>Endereço</span>
+                        <div class="caixa_cad_endereco">
+                            <form class="form_caixa" method="GET" class="form_style">
+                                <div id="p_cep_logradouro">
+                                    <div id="p_cep">
+                                        <label for="cep_prod_lbl" aria-label="cep_prod_lbl"> CEP</label><br>
+                                        <input class="caixa-texto" type="cep_produtor" placeholder="xxxxx-xxx" name="cep_prod" id="cep_prod">
+
+                                        <button class="button_conj" type="button" name="Pesquisa">
+                                            <img src="img/Lupa.svg" alt="Lupa branca, representando a busca.">
+                                        </button>
+                                    </div>
+                                    <div id="p_logradouro">
+                                        <label for="logradouro_prod_lbl" aria-label="logradouro_prod_lbl"> Logradouro</label><br>
+                                        <input class="caixa-texto" type="logradouro_produtor" placeholder="Avenida..." name="logradouro_prod" id="logradouro_prod">
+                                    </div> 
+                                </div>
+                                <div id="p_enderco">
+                                    <div id="p_bairro">
+                                        <label for="bairro_prod_lbl" aria-label="bairro_prod_lbl"> Bairro</label><br>
+                                        <input class="caixa-texto" type="bairro_produtor" placeholder="Jardins" name="bairro_prod" id="bairro_prod"> 
+                                    </div>
+                                    
+                                    <div id="p_end">
+                                        <label for="cidade_prod_lbl" aria-label="cidade_prod_lbl"> Cidade</label><br>
+                                        <input class="caixa-texto" type="cidade_produtor" placeholder="São Paulo" name="cidade_prod" id="cidade_prod"> 
+                                    </div>
+                                    
+                                    <div id="p_end">
+                                        <label for="estado_prod_lbl" aria-label="estado_prod_lbl"> Estado</label><br>
+                                        <select class="caixa-texto" name="disponibilidade_produto" id="disponibilidade_produto">
+                                            <option value="disponibilidade_nao">SP</option>
+                                            <option value="disponibilidade_sim">RJ</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="p_end">
+                                        <label for="numero_prod_lbl" aria-label="numero_prod_lbl"> Número</label><br>
+                                        <input class="caixa-texto" type="numero_produtor" placeholder="00" name="numero_prod" id="numero_prod"> 
+                                    </div>
+                                </div>
+                            </form>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!----------------------- GAME OVER ---------------------------->
+    <footer id="footer_contato">
+        <div class="container footer_position">
+            <div class="footer_style">
+                <p>ENTRE EM CONTATO CONOSCO</p>
+                <a href="www.gmail.com" title="E-mail Xepa Gourmet.">
+                    <img src="img/gmail.png"
+                        alt="Logo do Gmail. Envelope branco vazado, onde as laterais e a parte inferior da aba, formam a letra M. ">xepagourmet@gmail.com
+                </a>
+            </div>
+            <div class="footer_style">
+                <p class="off">ACOMPANHE NOSSAS REDES SOCIAIS</p>
+                <div>
+                    <a href="www.facebook.com.br" title="Facebook Xepa Gourmet.">
+                        <img src="img/facebook.png"
+                            alt="Logo do Facebook. Quadrado branco com pontas arredondadas, com vazado na forma da letra F.">/xepasenaicodexp
+                    </a>
+                    <a href="www.instagram.com.br" title="Instagram Xepa Gourmet.">
+                        <img src="img/instagram.png"
+                            alt="Logo do Instagram. Quadrado branco vazado com um circulo no centro, também vazado que forma a lente de uma câmera.">@xepagourmet_6
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>&copy;2019 | XEPA GOURMET</p>
+    </footer>
+</body>
+</html>

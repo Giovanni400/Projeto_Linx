@@ -39,186 +39,110 @@
 
     <main>
         <section>
-            <br>
-            <br>
             <div class="container">
-                <div class="card_cadastro">
-                    <div class="tit_cad">
-                        <h1 class="prod_h_titulo tituloh1">CADASTRO DE PRODUTO</h1>
-                    </div>
+                <div id="card_cadastro">
+                    <span>CADASTRO DE PRODUTO</span>
+                    
+                    <div id="caixa_total">
+                        <div id="caixa_parte_imagem">
+                            <img src="img/foto_legume.png" alt="Legume verde">
+                            <form action="GET">
+                                <button class="botao" type="button" name="Inserir IMG">Inserir IMG</button>
+                            </form>                            
+                        </div>
 
-                    <div class="formulario">
-                        <img src="img/foto_legume.png" alt="">
-
-                        <form class="form_box1">
-                            <label class="label_cad">Nome</label>
-                            <br>
-                            <input class="txt_cad" type="text" placeholder="Digite o nome do produto">
-                            <br>
-                            <label class="label_cad">Categoria</label>
-                            <br>
-                            <!--VERIFICAR COM O PESSOAL-->
-                            <input class="txt_cad" type="text" placeholder="Digite a categoria">
-                        </form>
-                    </div>
-
-
-                    <div class="formulario">
-                        <form class="form_box2">
-                            <div class="box_1">
-                                <label class="label_cad">Detalhe</label>
-                                <br>
-                                <input class="txt_1" type="text" placeholder="Digite os detalhes desse produto">
-                            </div>
-
-                            <div class="box_1">
-                                <label class="label_cad">Etiquete seu produto</label>
-                                <br>
-                                <input class="txt_2" type="text" placeholder="Digite uma etiqueta para seu produto">
-                            </div>
-                        </form>
-                    </div>
-
-                    <form class="form_box3">
-                        <div class="grupo_cad_total">
-                            <div class="grupo_cad">
-                                <label class="label_cad">Este produto é orgânico?</label>
-                                <br>
-                                <div class="opcao">
-                                    <input type="radio" name="escolha" id=""> Sim
-                                    <input type="radio" name="escolha" id=""> Não
+                        <div id="caixa_parte_conteudo">
+                            <form class="form_caixa" action="GET">
+                                <label for="nome_lbl" aria-label="nome_lbl"> Nome</label>
+                                <input class="caixa-texto" type="nome_produto" placeholder="Digite o nome do produto" name="nome_produto" id="nome_produto">  
+                                
+                                <div class="caixa_texto">
+                                    <div class="caixa_texto_sub">
+                                        <label for="preco_lbl" aria-label="preco_lbl"> Preço</label><br>
+                                        <input class="caixa_texto_componente" type="preco_produto" placeholder="Digite o preço" name="preco_produto" id="preco_produto"> 
+                                    </div>
+                                    <div class="caixa_texto_sub">
+                                        <label for="data_lbl" aria-label="data_lbl"> Data de Validade</label><br>
+                                        <input class="caixa_texto_componente" type="data_produto" placeholder="26/10/2019" name="data_produto" id="data_produto"> 
+                                    </div>
                                 </div>
-                                <br>
-                                <label class="label_cad">Produto disponível:</label>
-                                <br>
 
-                                <select class="txt_3" placeholder="Não">
-                                    <option>Não</option>
-                                    <option>Sim</option>
+                                <div class="caixa_texto">
+                                    <div class="caixa_texto_sub">
+                                        <label for="detalhe_lbl" aria-label="detalhe_lbl"> Detalhe</label><br>
+                                        <input class="caixa_texto_componente" type="detalhe_produto" placeholder="Digite os detalhes desse produto" name="detalhe_produto" id="detalhe_produto"> 
+                                    </div>
+                                    <div class="caixa_texto_sub">
+                                        <label for="disponibilidade_lbl" aria-label="disponibilidade_lbl"> Disponibilidade</label><br>
+                                        <select class="caixa_texto_componente" name="disponibilidade_produto" id="disponibilidade_produto">
+                                            <option value="disponibilidade_nao">Não</option>
+                                            <option value="disponibilidade_sim">Sim</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label for="organico_lbl" aria-label="organico_lbl"> Este produto é orgânico?</label><br>
+                                <select class="caixa_texto_componente" name="organico_produto" id="organico_produto">
+                                    <option value="organico_nao">Não</option>
+                                    <option value="organico_sim">Sim</option>
                                 </select>
 
-                                <!-- <input class="txt_3" type="" placeholder="Não"> -->
-                            </div>
-
-                            <div class="btncad">
-                                <button class="btn_cad_1" type="submit">Salvar</button>
-                                <button class="btn_cad_1" type="submit">Limpar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="linha_laranja_cad"></div>
-                <h2 class="prod_h">PRODUTOS CADASTRADOS</h2>
-                <div class="card_total_cad">
-                    <button class="btn_cad"><img src="img/anterior.png" alt=""></button>
-                    <div class="card_prod">
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
+                                <div class="caixa_texto_botoes">
+                                    <button class="botao" type="button" name="Inserir IMG">Salvar</button>
+                                    <button class="botao" type="button" name="Inserir IMG">Limpar</button>
+                                </div>
+                            </form>  
                         </div>
                     </div>
-                    <button class="btn_cad"><img src="img/proximo.png" alt=""></button>
+                </div>  
+                
+                <div class="linha"></div>
+                <div class="tit_produtor">
+                    <span>PRODUTOS CADASTRADOS</span>
                 </div>
-            </div>
 
-
-            <div class="container parte2">
-                <div class="linha_laranja_cad"></div>
-                <h2 class="prod_h">RECEITAS CADASTRADAS</h2>
-                <div class="card_total_cad">
-                    <button class="btn_cad"><img src="img/anterior.png" alt=""></button>
-                    <div class="card_prod">
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
-
-                        <div class="card crd">
-                            <img src="img/foto_legume.png" alt="">
-                            <p>Alcachofra</p>
-                            <p>Legumes Orgânicos</p>
-                            <p>200 unidades</p>
-
-                            <h6 class="tag_laranja">#Legumes</h6>
-                            <h6 class="tag_laranja">#Orgânico</h6>
-                            <button class="btn_cad_1" type="submit">Editar</button>
-                        </div>
+                <div class="card_">
+                    <div class="card_branco">
+                        <img src="img/foto_legume.png" alt="Cartão de produtos já cadastrados">
+                        <p>Alcachofra</p>
+                        <p>Legumes Orgânicos</p>
+                        <p>Disponível</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
                     </div>
-                    <button class="btn_cad"><img src="img/proximo.png" alt=""></button>
+
+                    <div class="card_branco">
+                        <img src="img/foto_legume.png" alt="Cartão de produtos já cadastrados">
+                        <p>Alcachofra</p>
+                        <p>Legumes Orgânicos</p>
+                        <p>Disponível</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+
+                    <div class="card_branco">
+                        <img src="img/foto_legume.png" alt="Cartão de produtos já cadastrados">
+                        <p>Alcachofra</p>
+                        <p>Legumes Orgânicos</p>
+                        <p>Disponível</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
+
+                    <div class="card_branco">
+                        <img src="img/foto_legume.png" alt="Cartão de produtos já cadastrados">
+                        <p>Alcachofra</p>
+                        <p>Legumes Orgânicos</p>
+                        <p>Disponível</p>
+                        <button class="botao" type="button" name="Editar_Card">Editar</button>
+                    </div>
                 </div>
+
+                <div class="mais">
+                    <a href="#" title="Ver mais receitas">
+                    <img src="img/mais.png"
+                    alt="Ícone de adição, representando ver mais."></a>
+                </div>
+
             </div>
-        </section>
+        </section>                    
     </main>
     <footer id="footer_contato">
         <div class="container footer_position">

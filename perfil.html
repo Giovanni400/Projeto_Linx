@@ -38,97 +38,109 @@
     </header>
     <!-------------------------     START    -------------------------->
     <main>
-        <div class="container wrap">
-            <div class="dados-pessoais">
-                <img src="img/perfil.png" alt="Foto de perfil
-                    do colaborador.">
-                <form id="frmDadosPessoais">
-                    <div class="dados">
-                        <label id="txtNomeColaborador" class="titulo-perfil">Carlos
-                            Roberto de Almeida</label>
-                        <div class="text-data">
-                            <label id="txtNomeEmpresa"><span role="text">Nome:</span>
-                                Organic Gourmet</label>
-                            <label id="txtRazaoSocial"><span role="text">Razão social:</span>Organic
-                                Gourmet ltda</label>
-                            <label id="txtCnpj"><span role="text">CNPJ:</span> 00.000.000 /
-                                0001 - 00</label>
+        <section>
+            <div class="container">
+                <div class="caixa_cad_colaborador">
+                    <span>CADASTRO COLABORADOR</span><br>
+                    <img src="img/colaborador_3.png" alt="">
+                    
+                    <form action="GET">
+                        <button class="botao" type="button" name="Inserir IMG">Inserir IMG</button>
+                    </form> 
+                </div> 
+            
+                <div class="caixa_cadastro">
+                    <div class="linha_perfil_colab"></div>
+                    <span>Informações</span><br>
+                    <div>
+                        <form class="form_caixa" action="GET">
+                            <div id="p_nome">
+                                <label for="nome_prod_lbl" aria-label="nome_prod_lbl"> Nome</label> <br>
+                                <input class="caixa-texto" type="nome_produtor" placeholder="Digite seu nome" name="nome_prod" id="nome_prod"> 
+                            </div>
+
+                            <div id="p_razao_documento"> 
+                                <div id="_1">
+                                    <label for="razao_social_lbl" aria-label="razao_social_lbl"> Razão Social</label><br>
+                                    <input class="caixa-texto" type="razao_social" placeholder="Digite o nome da razao social" name="razao_social" id="razao_social">
+                                </div>
+                                <div id="_2">
+                                    <label for="documento_lbl" aria-label="documento_lbl"> CPF/CNPJ</label><br>
+                                    <input class="caixa-texto" type="documento" placeholder="Digite um documento (CPF/CNPJ)" name="documento" id="documento">
+                                </div>
+                            </div>
+
+                            <div id="p_entrega">
+                                <label for="entrega_lbl" aria-label="entrega_lbl"> Faz entrega?</label><br>
+                                <select class="caixa-texto" name="entrega_produto" id="entrega_produto">
+                                    <option value="entrega_nao">Não</option>
+                                    <option value="entrega_sim">Sim</option>
+                                </select><br>
+                            </div>
+
+                            <label for="telefone_lbl" aria-label="telefone_lbl"> Telefone</label><br>
+                            <input class="caixa-texto" type="telefone" placeholder="(xx) xxxxx - xxxx" name="telefone_produtor" id="telefone_produto"> 
+                            <br>
+                            <label for="telefone2_lbl" aria-label="telefone2_lbl"> Telefone 2° Opção</label><br>
+                            <input class="caixa-texto" type="telefone2" placeholder="(xx) xxxxx - xxxx" name="telefone2_produtor" id="telefone2_produto"> 
+                            <br>
+                            <label for="email_lbl" aria-label="email_lbl"> E-mail</label><br>
+                            <input class="caixa-texto" type="email" placeholder="exemplo@exemplo.com.br" name="email_produtor" id="email_produto">
+                            <br>
+                            <div id="p_sobre">
+                                <label for="sobre_lbl" aria-label="sobre_lbl"> Sobre</label><br>
+                                <input class="caixa-texto" type="sobre" placeholder="Sobre o colaborador" name="sobre_produtor" id="sobre_produto">
+                            </div>
+                        </form>            
+                    
+                        <div class="linha_perfil_colab"></div>
+                        <span>Endereço</span>
+                        <div class="caixa_cad_endereco">
+                            <form class="form_caixa" method="GET" class="form_style">
+                                <div id="p_cep_logradouro">
+                                    <div id="p_cep">
+                                        <label for="cep_prod_lbl" aria-label="cep_prod_lbl"> CEP</label><br>
+                                        <input class="caixa-texto" type="cep_produtor" placeholder="xxxxx-xxx" name="cep_prod" id="cep_prod">
+
+                                        <button class="button_conj" type="button" name="Pesquisa">
+                                            <img src="img/Lupa.svg" alt="Lupa branca, representando a busca.">
+                                        </button>
+                                    </div>
+                                    <div id="p_logradouro">
+                                        <label for="logradouro_prod_lbl" aria-label="logradouro_prod_lbl"> Logradouro</label><br>
+                                        <input class="caixa-texto" type="logradouro_produtor" placeholder="Avenida..." name="logradouro_prod" id="logradouro_prod">
+                                    </div> 
+                                </div>
+                                <div id="p_enderco">
+                                    <div id="p_bairro">
+                                        <label for="bairro_prod_lbl" aria-label="bairro_prod_lbl"> Bairro</label><br>
+                                        <input class="caixa-texto" type="bairro_produtor" placeholder="Jardins" name="bairro_prod" id="bairro_prod"> 
+                                    </div>
+                                    
+                                    <div id="p_end">
+                                        <label for="cidade_prod_lbl" aria-label="cidade_prod_lbl"> Cidade</label><br>
+                                        <input class="caixa-texto" type="cidade_produtor" placeholder="São Paulo" name="cidade_prod" id="cidade_prod"> 
+                                    </div>
+                                    
+                                    <div id="p_end">
+                                        <label for="estado_prod_lbl" aria-label="estado_prod_lbl"> Estado</label><br>
+                                        <select class="caixa-texto" name="disponibilidade_produto" id="disponibilidade_produto">
+                                            <option value="disponibilidade_nao">SP</option>
+                                            <option value="disponibilidade_sim">RJ</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="p_end">
+                                        <label for="numero_prod_lbl" aria-label="numero_prod_lbl"> Número</label><br>
+                                        <input class="caixa-texto" type="numero_produtor" placeholder="00" name="numero_prod" id="numero_prod"> 
+                                    </div>
+                                </div>
+                            </form>   
                         </div>
                     </div>
-                    <div class="informacoes-extras">
-                        <div class="row-form">
-                            <span role="text"> Faz entregas?</span>
-                            <label for="entregaNo">
-                                <input type="radio" name="entregas" id="entregaNo" value="0" title="Não">Não
-                            </label>
-                            <label for="entregaSi">
-                                <input type="radio" name="entregas" id="entregaSi" value="1" title="Sim">Sim
-                            </label>
-                        </div>
-                        <div class="row-form">
-                            <span role="text">Produtos orgânicos?</span>
-                            <label for="organicoNo">
-                                <input type="radio" name="organicos" id="organicoNo" value="0" title="Não">Não
-                            </label>
-                            <label for="organicoSi">
-                                <input type="radio" name="organicos" id="organicoSi" value="1" title="Sim">Sim
-                            </label>
-                        </div>
-                        <div class="row-form">
-                            <span role="text">Disponibiliza receitas?<span>
-                                    <label for="receitasNo">
-                                        <input type="radio" name="receitas" id="receitasNo" value="0" title="Não">Não
-                                    </label>
-                                    <label for="receitasSi">
-                                        <input type="radio" name="receitas" id="receitasSi" value="1" title="Sim">Sim
-                                    </label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="dados-contato">
-                <div class="contato card wrap">
-                    <h5>Contato</h5>
-                    <form method="post" id="frmcontato">
-                        <label class="texto-card text-social" id="lblTel">
-                            <img src="img/tel-ico.png" alt="">
-                            <span role="text">Telefone:</span>
-                            (XX) XXXXX-XXXX
-                        </label>
-                        <label class="texto-card text-social" id="lblMail">
-                            <img src="img/mail-ico.png" alt="">
-                            <span role="text">E-mail:</span>
-                            exemplo@exemplo.com
-                        </label>
-                        <label class="texto-card text-social" id="lblFace">
-                            <img src="img/face-ico.png" alt="">
-                            <span role="text">Facebook:</span>
-                            facebook.com/meuface
-                        </label>
-                    </form>
                 </div>
-                <div class="endereco card" role="group">
-                    <h5>Endereço</h5>
-                    <p class="texto-card">Alameda Barão de Limeira, 539
-                        - Santa Cecilia, São Paulo - SP, 01202-001</p>
-                    <div class="mapa" role="region">
-                        <iframe class="card"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.8772063050162!2d-46.64695639829928!3d-23.536554112522886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola%20SENAI%20de%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1567704177732!5m2!1spt-BR!2sbr"
-                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
             </div>
-            <div class="botoes">
-                <button class="btn-card" title="Excluir conta">
-                    <img src="img/delete_32px.png" alt="Icone lata de
-                                lixo"> Perfil Inativo </button>
-                <button class="btn-card" title="Editar dados pessoais">
-                    <img src="img/editar.png" alt="Icone lápis."> Editar</button>
-                <button class="btn-card" title="Salvar edição">
-                    <img src="img/save_32px.png" alt="Icone disquete">
-                    Salvar </button>
-            </div>
-        </div>
+        </section>
     </main>
     <!----------------------- GAME OVER ---------------------------->
     <footer id="footer_contato">

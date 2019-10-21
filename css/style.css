@@ -242,6 +242,8 @@ body {
     font-size: 25px;
     padding: 25px 0px;
     margin: 0px 0px 40px;
+
+    margin-bottom: 0px; /*verificar */
 }
 
 .card_colab {
@@ -381,6 +383,15 @@ h3 {
     border-radius: 10px;
     margin-top: 40px;
     width: 350px;
+}
+
+.botao_mais{
+    text-align: center;
+    height: 50px;
+}
+
+.cards .button_conj{
+
 }
 
 .img {
@@ -533,12 +544,68 @@ h2 {
     width: 20px;
     margin: 0px 15px 0px 0px;
 }
+ 
+#opcao_login{
+    height: 20px;
+    width: 100%;
+    /* background: red; */
+    margin-top: 2 0px;
+    display: flex;
+    
+}
+
+#opcao_login input{
+    width: 40px;
+}
 
 /* ---------------------------------------------------------------FIM DA PAGINA LOGIN-----------------------------------------------  */
 
 /* ---------------------------------------------------------------INICIO DA PAGINA PERFIL-----------------------------------------------  */
 
-.wrap {
+.caixa_cad_colaborador{
+    text-align: center;
+    padding: 40px 0px;
+    
+}
+
+.caixa_cad_colaborador span{
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+
+.caixa_cad_colaborador img{
+    margin-top: 20px;
+}
+
+.caixa_cad_colaborador button{
+    width: 150px;
+    
+}
+
+.linha_perfil_colab{
+    background-color: #707070;
+    padding: 1px;  
+    margin-bottom: 20px;
+}
+
+.caixa_cadastro span{
+    font-size: 25px;
+}
+
+.caixa_cad_endereco{
+    margin-bottom: 30px;
+}
+
+.caixa_cad_endereco .button_conj{
+    height: 30px;
+    width: 40px;
+    
+}
+
+
+
+
+/* .wrap {
     display: flex;
     flex-wrap: wrap;
 }
@@ -727,184 +794,202 @@ h2 {
 .btn-card img {
     width: 32px;
     margin-right: 5px;
-}
+} */
 
 /* ---------------------------------------------------------------FIM DA PAGINA PERFIL-----------------------------------------------  */
 
 /* ---------------------------------------------------------------INICIO DA PAGINA CADASTROS-----------------------------------------------  */
 
-.formulario {
-    background-color: var(--branco);
+#card_cadastro{
+    background: var(--branco);
+    padding: 30px 0px;
+    margin-bottom: 4vw;
+    margin-top: 13vw;
+    text-align: center; 
+}
+
+#card_cadastro span{
+    font-size: 40px; 
+    text-decoration-line: underline; 
+}
+
+#caixa_total{
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 820px;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-.formulario img {
-    width: 150px;
+#caixa_parte_conteudo{
+    width: 800px;  
 }
 
-.tit_cad {
-    margin: auto;
-    width: 970px;
-    background-color: var(--branco);
+#caixa_parte_conteudo label{
+    font-size: 20px;   
 }
 
-.card_cadastro {
-    width: 970px;
-    margin: auto;
-    background-color: var(--branco);
-}
-
-.card_total_cad {
-    display: flex;
-    justify-content: space-between;
-    width: 920px;
-    margin: auto;
-}
-
-.label_cad {
+#caixa_parte_conteudo .caixa-texto{
+    width: 750px;
     font-size: 20px;
 }
 
-.txt_cad {
-    width: 540px;
-    padding: 6px 40px 6px 9px;
+#caixa_parte_conteudo .form_caixa{
+    text-align: center;
 }
 
-.form_box1 {
-    width: 720px;
-    padding-left: 30px;
-}
-
-.form_box2 {
+.caixa_texto{
     display: flex;
-    justify-content: space-between;
-    width: 780px;
+    justify-content: space-between;  
+    width: 760px; 
 }
 
-.form_box3 {
-    width: 730px;
-    margin: auto;
-    background-color: var(--branco);
+.caixa_texto_componente{
+    font-size: 20px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;        
 }
 
-.txt_1 {
-    width: 290px;
-    padding: 6px 30px 6px 9px;
-}
-
-.txt_2 {
-    width: 330px;
-    padding: 6px 30px 6px 9px;
-}
-
-.txt_3 {
-    width: 210px;
-    padding: 6px 30px 6px 9px;
-}
-
-.box_1 {
-    width: 380px;
-}
-
-.grupo_cad_total {
+.caixa_texto_botoes{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;    
+    
+}
+
+.caixa_texto_botoes button{
+    width: 15vw;
+    
+}
+
+.card_branco{
+    background: var(--branco);
+    width: 200px;
+    padding: 10px 0px;
+}
+
+.card_branco img{
+    width: 120px;
     padding-bottom: 20px;
 }
 
-.opcao {
-    padding-left: 40px;
-    font-size: 18px;
-}
-
-.btncad {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 600px;
-}
-
-.prod_h {
-    text-align: center;
-    text-decoration-line: underline;
-    font-size: 33px;
-    width: 970px;
-    margin: auto;
-    padding: 50px 0px;
-}
-
-.prod_h_titulo {
-    text-align: center;
-    text-decoration-line: underline;
-    font-size: 33px;
-    width: 920px;
-    margin: auto;
-    padding: 30px 0px;
-}
-
-.card_prod {
-    display: flex;
-    justify-content: space-around;
-    height: 230px;
-    text-align: center;
-    width: 800px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.card_prod .card {
-    width: 160px;
-}
-
-.card .btn_cad_1 {
-    width: 80px;
-    height: 30px;
-    margin-top: 10px;
-}
-
-.card_prod img {
-    width: 80px;
-    padding-top: 10px;
-}
-
-.btn_cad {
-    height: 230px;
-    background-color: var(--roxo);
-    border: none;
-    width: 70px;
-    background-color: transparent;
-}
-
-.btn_cad_1 {
-    color: var(--branco);
-    background-color: var(--roxo);
-    border: 1px solid var(--roxo);
-    border-radius: 10px;
-    font-size: 18px;
+.card_branco button{
     width: 150px;
+    font-size: 20px;
     height: 40px;
-    margin: 0px 5px;
 }
 
-.btn_cad img {
-    width: 50px;
+.card_{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.linha_laranja_cad {
-    padding-top: 30px;
-    border-bottom: 3px solid var(--laranja);
+.tit_produtor{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.tit_produtor span{
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+
+#p_nome input{
+    width: 95%;
+}
+
+#p_razao_documento{
+    display: flex;
+}
+
+#p_razao_documento #_1{
+    margin-right: 45px;
+    width: 60%; 
+}
+
+#p_razao_documento #_2{
+    width: 30%;
+
+}
+
+#p_razao_documento #_1 input{
+    width: 100%;    
+}
+
+#p_razao_documento #_2 input{
+    width: 100%;    
+}
+
+#p_sobre input{
+    height: 200px;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.caixa_cadastro{
+    width: 900px;
     margin: auto;
-    width: 920px;
 }
 
-.tag_laranja {
-    color: var(--laranja);
+#p_entrega select{
+    width: 10vw;
 }
+
+#p_cep_logradouro{
+    display: flex;
+    
+        
+}
+
+#p_cep{
+    width: 30%;
+}
+
+#p_logradouro{
+    width: 75%;  
+}
+
+#p_logradouro input{
+    width: 90%;       
+}
+
+#p_cep img{
+    width: 20px;
+}
+
+#p_enderco{
+    display: flex;
+}
+
+#p_end{
+    margin-left: 30px;
+}
+
+#p_email{
+    margin-bottom: 30px;
+}
+
 
 /* ---------------------------------------------------------------FIM DA PAGINA CADASTROS-----------------------------------------------  */
+
+/* ---------------------------------------------------------------INICIO DA PAGINA CADASTROS RECEITAS-----------------------------------------------  */
+
+.img_cad_receita{
+    width: 15vw;
+}
+
+.caixa_texto_componente_bt{
+    font-size: 20px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px; 
+    height: 200px;       
+}
+
+/* ---------------------------------------------------------------FIM DA PAGINA CADASTROS RECEITAS-----------------------------------------------  */
+
 
 /* ---------------------------------------------------------------INICIO DA PAGINA HOME-----------------------------------------------  */
 
