@@ -833,7 +833,8 @@ h2 {
 }
 
 #caixa_parte_conteudo .form_caixa{
-    text-align: center;
+    text-align: initial;
+    
 }
 
 .caixa_texto{
@@ -968,6 +969,14 @@ h2 {
 
 #p_email{
     margin-bottom: 30px;
+}
+
+#p_email input{
+    width: 95%;    
+}
+
+#p_email_2 input{
+    width: 95%;    
 }
 
 
