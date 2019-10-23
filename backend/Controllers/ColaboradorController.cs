@@ -16,7 +16,7 @@ namespace backend.Controllers
         //GET: api/Colaborador
         [HttpGet]
         public async Task<ActionResult<List<Colaborador>>> Get(){
-            var Colaboradors = await _contexto.Colaborador.Include("Usuario").ToListAsync();
+            var Colaboradors = await _contexto.Colaborador.Include("IdUsuarioNavigation").ToListAsync();
 
             if(Colaboradors == null){
                 return NotFound();
@@ -29,7 +29,7 @@ namespace backend.Controllers
         //GET: api/Colaborador/2
         [HttpGet("{id}")]
         public async Task<ActionResult<Colaborador>> Get(int id){
-            var Colaborador = await _contexto.Colaborador.Include("Usuario").FirstOrDefaultAsync(e => e.IdColaborador == id);
+            var Colaborador = await _contexto.Colaborador.Include("IdUsuarioNavigation").FirstOrDefaultAsync(e => e.IdColaborador == id);
 
             if(Colaborador == null){
                 return NotFound();

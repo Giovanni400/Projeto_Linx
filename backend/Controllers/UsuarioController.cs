@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,9 +15,10 @@ namespace backend.Controllers
         XepaDigitalContext _contexto = new XepaDigitalContext(); 
 
         //GET: api/Usuario
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<List<Usuario>>> Get(){
-            var Usuarios = await _contexto.Usuario.Include("Endereco").ToListAsync();
+            var Usuarios = await _contexto.Usuario.Include("IdEnderecoNavigation").ToListAsync();
 
             if(Usuarios == null){
                 return NotFound();
@@ -29,7 +31,7 @@ namespace backend.Controllers
         //GET: api/Usuario/2
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> Get(int id){
-            var Usuario = await _contexto.Usuario.Include("Endereco").FirstOrDefaultAsync(e => e.IdUsuario == id);
+            var Usuario = await _contexto.Usuario.Include("IdEnderecoNavigation").FirstOrDefaultAsync(e => e.IdUsuario == id);
 
             if(Usuario == null){
                 return NotFound();

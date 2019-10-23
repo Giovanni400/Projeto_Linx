@@ -16,7 +16,7 @@ namespace backend.Controllers
         //GET: api/RegistroProduto
         [HttpGet]
         public async Task<ActionResult<List<RegistroProduto>>> Get(){
-            var RegistroProdutos = await _contexto.RegistroProduto.Include("Produto").Include("Colarador").ToListAsync();
+            var RegistroProdutos = await _contexto.RegistroProduto.Include("IdProdutoNavigation").Include("IdColaboradorNavigation").ToListAsync();
 
             if(RegistroProdutos == null){
                 return NotFound();
@@ -29,7 +29,7 @@ namespace backend.Controllers
         //GET: api/RegistroProduto/2
         [HttpGet("{id}")]
         public async Task<ActionResult<RegistroProduto>> Get(int id){
-            var RegistroProduto = await _contexto.RegistroProduto.Include("Produto").Include("Colaborador").FirstOrDefaultAsync(e => e.IdRegistro == id);
+            var RegistroProduto = await _contexto.RegistroProduto.Include("IdProdutoNavigation").Include("IdColaboradorNavigation").FirstOrDefaultAsync(e => e.IdRegistro == id);
 
             if(RegistroProduto == null){
                 return NotFound();
