@@ -16,7 +16,7 @@ namespace backend.Controllers
         //GET: api/Produto
         [HttpGet]
         public async Task<ActionResult<List<Produto>>> Get(){
-            var Produtos = await _contexto.Produto.ToListAsync();
+            var Produtos = await _contexto.Produto.Include("SobreProduto").ToListAsync();
 
             if(Produtos == null){
                 return NotFound();
@@ -29,7 +29,7 @@ namespace backend.Controllers
         //GET: api/Produto/2
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> Get(int id){
-            var Produto = await _contexto.Produto.FindAsync(id);
+            var Produto = await _contexto.Produto.Include("SobreProduto").FirstOrDefaultAsync(e => e.IdProduto == id);
 
             if(Produto == null){
                 return NotFound();

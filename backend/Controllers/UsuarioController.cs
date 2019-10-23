@@ -16,7 +16,7 @@ namespace backend.Controllers
         //GET: api/Usuario
         [HttpGet]
         public async Task<ActionResult<List<Usuario>>> Get(){
-            var Usuarios = await _contexto.Usuario.ToListAsync();
+            var Usuarios = await _contexto.Usuario.Include("Endereco").ToListAsync();
 
             if(Usuarios == null){
                 return NotFound();
@@ -29,7 +29,7 @@ namespace backend.Controllers
         //GET: api/Usuario/2
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> Get(int id){
-            var Usuario = await _contexto.Usuario.FindAsync(id);
+            var Usuario = await _contexto.Usuario.Include("Endereco").FirstOrDefaultAsync(e => e.IdUsuario == id);
 
             if(Usuario == null){
                 return NotFound();

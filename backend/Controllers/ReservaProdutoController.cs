@@ -16,7 +16,7 @@ namespace backend.Controllers
         //GET: api/ReservaProduto
         [HttpGet]
         public async Task<ActionResult<List<ReservaProduto>>> Get(){
-            var ReservaProdutos = await _contexto.ReservaProduto.ToListAsync();
+            var ReservaProdutos = await _contexto.ReservaProduto.Include("Produto").Include("Usuario").ToListAsync();
 
             if(ReservaProdutos == null){
                 return NotFound();
@@ -29,7 +29,7 @@ namespace backend.Controllers
         //GET: api/ReservaProduto/2
         [HttpGet("{id}")]
         public async Task<ActionResult<ReservaProduto>> Get(int id){
-            var ReservaProduto = await _contexto.ReservaProduto.FindAsync(id);
+            var ReservaProduto = await _contexto.ReservaProduto.Include("Produto").Include("Usuario").FirstOrDefaultAsync(e => e.IdReserva == id);
 
             if(ReservaProduto == null){
                 return NotFound();
